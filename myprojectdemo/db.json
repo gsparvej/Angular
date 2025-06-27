@@ -11,5 +11,22 @@
       "author": "User"
     }
   ],
-  "management": []
+  "management": [
+    {
+      "id": "8219",
+      "name": "ferfreg",
+      "email": "parvejmd4469@gmail.com",
+      "designation": "admin",
+      "department": "Administration",
+      "contact": 77858
+    },
+    {
+      "id": "1225",
+      "name": "Md. Parvej Hossen",
+      "email": "eiasin@gamil.com",
+      "designation": "CEO",
+      "department": "Administration",
+      "contact": 8978
+    }
+  ]
 }
