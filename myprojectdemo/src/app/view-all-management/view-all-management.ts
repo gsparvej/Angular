@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { CompanyService } from '../service/company.service';
 
 @Component({
@@ -14,6 +14,7 @@ export class ViewAllManagement implements OnInit{
   constructor(
 
     private companyService: CompanyService,
+    private cdr: ChangeDetectorRef
 
 
   ){}
@@ -24,6 +25,31 @@ export class ViewAllManagement implements OnInit{
   loadAllManagement(){
 
 this.management= this.companyService.getAllManagement();
+
+  }
+
+  deleteManage(id: string): void {
+
+    this.companyService.deleteManagement(id).subscribe({
+
+      next: (res) => {
+
+        console.log("deleted successfully",res);
+        this.cdr.reattach();
+        this.loadAllManagement();
+
+      },
+      error: (err) =>{
+
+        console.log(err);
+      }
+
+
+
+
+    });
+
+
 
   }
 
