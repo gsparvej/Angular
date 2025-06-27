@@ -1,0 +1,22 @@
+{
+  "posts": [
+    { "id": 1, "title": "Hello Angular", "author": "Admin" },
+    { "id": 2, "title": "Learning HTTP", "author": "User" }
+  ],
+
+"management": [
+
+      {
+      "id": "a027",
+      "name": "Md. Parvej ",
+      "email": "parvejmd4469@gmail.com",
+      "designation": "Sr.Admin",
+      "department": "Administration",
+      "contact": "+08801906-600275"
+    }
+
+
+]
+
+
+}
