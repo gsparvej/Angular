@@ -17,6 +17,10 @@ export class CompanyService {
     return this.http.get(this.baseUrl);
 
   }
+  deleteManagement(id: string): Observable<any> {
+
+    return this.http.delete(this.baseUrl+'/'+id);
+  }
 
 
 }
