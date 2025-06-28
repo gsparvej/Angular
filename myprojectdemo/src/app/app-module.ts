@@ -8,6 +8,9 @@ import { Footer } from './footer/footer';
 import { ViewAllManagement } from './view-all-management/view-all-management';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Home } from './home/home';
+import { AddManagement } from './add-management/add-management';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateManagement } from './update-management/update-management';
 
 @NgModule({
   declarations: [
@@ -15,11 +18,15 @@ import { Home } from './home/home';
     Header,
     Footer,
     ViewAllManagement,
-    Home
+    Home,
+    AddManagement,
+    UpdateManagement
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
