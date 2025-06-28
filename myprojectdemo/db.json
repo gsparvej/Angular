@@ -13,20 +13,20 @@
   ],
   "management": [
     {
-      "id": "8219",
-      "name": "ferfreg",
-      "email": "parvejmd4469@gmail.com",
-      "designation": "admin",
-      "department": "Administration",
-      "contact": 77858
-    },
-    {
       "id": "1225",
       "name": "Md. Parvej Hossen",
       "email": "parvej@gamil.com",
       "designation": "CEO",
       "department": "Administration",
       "contact": 80992379
+    },
+    {
+      "id": "afe7",
+      "name": "ferfreg",
+      "email": "eiasin@gamil.com",
+      "designation": "admin",
+      "department": "Administration",
+      "contact": 5756756
     }
   ]
 }
