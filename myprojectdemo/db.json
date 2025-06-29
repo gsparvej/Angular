@@ -1,14 +1,22 @@
 {
-  "posts": [
+  "employee": [
     {
       "id": "1",
-      "title": "Hello Angular",
-      "author": "Admin"
+      "name": "Hello Angular",
+      "designation": "Admin",
+      "department": "Administration",
+      "startDate": "july",
+      "contact": "018576587876",
+      "salary": 25000
     },
     {
-      "id": "2",
-      "title": "Learning HTTP",
-      "author": "User"
+      "id": "6a9d",
+      "name": "Md. Parvej Hossen",
+      "designation": "ferfreg",
+      "department": "grg",
+      "startDate": "2025-06-03",
+      "contact": "876876",
+      "salary": 12000
     }
   ],
   "management": [
