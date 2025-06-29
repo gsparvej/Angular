@@ -11,6 +11,8 @@ import { Home } from './home/home';
 import { AddManagement } from './add-management/add-management';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateManagement } from './update-management/update-management';
+import { ViewAllEmployee } from './view-all-employee/view-all-employee';
+import { AddEmployee } from './add-employee/add-employee';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UpdateManagement } from './update-management/update-management';
     ViewAllManagement,
     Home,
     AddManagement,
-    UpdateManagement
+    UpdateManagement,
+    ViewAllEmployee,
+    AddEmployee
   ],
   imports: [
     BrowserModule,
