@@ -46,5 +46,19 @@
       "department": "",
       "contact": ""
     }
+  ],
+  "locations": [
+
+    {
+      "id": " ",
+      "address": "Dhaka"
+    },
+     {
+      "id": " ",
+      "address": "Rajshahi"
+    }
+
+
+
   ]
 }
