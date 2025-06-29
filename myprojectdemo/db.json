@@ -1,22 +1,49 @@
 {
-  "posts": [
-    { "id": 1, "title": "Hello Angular", "author": "Admin" },
-    { "id": 2, "title": "Learning HTTP", "author": "User" }
-  ],
-
-"management": [
-
-      {
-      "id": "a027",
-      "name": "Md. Parvej ",
-      "email": "parvejmd4469@gmail.com",
-      "designation": "Sr.Admin",
+  "employee": [
+    {
+      "id": "1",
+      "name": "Hello Angular",
+      "designation": "Admin",
       "department": "Administration",
-      "contact": "+08801906-600275"
+      "startDate": "july",
+      "contact": "018576587876",
+      "salary": 25000
+    },
+    {
+      "id": "46e4",
+      "name": "",
+      "designation": "",
+      "department": "",
+      "startDate": "",
+      "contact": "",
+      "salary": ""
+    },
+    {
+      "id": "0a58",
+      "name": "Eiasin Prodhan",
+      "designation": "Senior Executive",
+      "department": "Administration",
+      "startDate": "2025-01-21",
+      "contact": "01877657945",
+      "salary": 45000
     }
-
-
-]
-
-
+  ],
+  "management": [
+    {
+      "id": "f59a",
+      "name": "Md. Parvej Hossen",
+      "email": "parvejmd4469@gmail.com",
+      "designation": "admin",
+      "department": "Administration",
+      "contact": "078927892"
+    },
+    {
+      "id": "c8fe",
+      "name": "Eiasin Prodhan",
+      "email": "eiasin@gamil.com",
+      "designation": "Admin",
+      "department": "Administration",
+      "contact": "018576587876"
+    }
+  ]
 }
