@@ -4,6 +4,7 @@ import { HrService } from '../service/hr.service';
 import { Router } from '@angular/router';
 import { Employee } from '../../model/employee.model';
 
+
 @Component({
   selector: 'app-add-employee',
   standalone: false,

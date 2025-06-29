@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { CompanyService } from '../service/company.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-all-management',
@@ -14,6 +15,8 @@ export class ViewAllManagement implements OnInit{
   constructor(
 
     private companyService: CompanyService,
+    private cdr: ChangeDetectorRef,
+    private router: Router
 
 
   ){}
@@ -24,6 +27,53 @@ export class ViewAllManagement implements OnInit{
   loadAllManagement(){
 
 this.management= this.companyService.getAllManagement();
+
+  }
+
+  deleteManage(id: string): void {
+
+    this.companyService.deleteManagement(id).subscribe({
+
+      next: (res) => {
+
+        console.log("deleted successfully",res);
+        this.cdr.reattach();
+        this.loadAllManagement();
+
+      },
+      error: (err) =>{
+
+        console.log(err);
+      }
+
+
+
+
+    });
+
+
+
+  }
+
+  getManageById(id:string): void{
+
+      this.companyService.getManagementById(id).subscribe({
+
+      next: (res) => {
+
+      console.log(res,"Id Get Successfully");
+      this.router.navigate(['/updateManagement',id]);
+
+                    },
+      error: (err) => {
+      console.log(err);
+
+
+  }
+
+
+});
+
 
   }
 

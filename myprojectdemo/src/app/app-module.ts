@@ -9,6 +9,10 @@ import { ViewAllManagement } from './view-all-management/view-all-management';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Home } from './home/home';
 import { AddEmployee } from './add-employee/add-employee';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddManagement } from './add-management/add-management';
+import { UpdateManagement } from './update-management/update-management';
+import { ViewAllEmployee } from './view-all-employee/view-all-employee';
 
 @NgModule({
   declarations: [
@@ -17,17 +21,22 @@ import { AddEmployee } from './add-employee/add-employee';
     Footer,
     ViewAllManagement,
     Home,
-    AddEmployee
+    AddEmployee,
+    AddManagement,
+    UpdateManagement,
+    ViewAllEmployee
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideClientHydration(withEventReplay()),
-    provideHttpClient(withFetch())
+   provideHttpClient(withFetch())
   ],
   bootstrap: [App]
 })
