@@ -8,6 +8,7 @@ import { Footer } from './footer/footer';
 import { ViewAllManagement } from './view-all-management/view-all-management';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Home } from './home/home';
+import { AddEmployee } from './add-employee/add-employee';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Home } from './home/home';
     Header,
     Footer,
     ViewAllManagement,
-    Home
+    Home,
+    AddEmployee
   ],
   imports: [
     BrowserModule,
