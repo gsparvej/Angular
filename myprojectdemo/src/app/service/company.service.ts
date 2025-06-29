@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Management } from '../../model/management.model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +21,12 @@ export class CompanyService {
   deleteManagement(id: string): Observable<any> {
 
     return this.http.delete(this.baseUrl+'/'+id);
+  }
+
+
+  saveManagement(manage: Management) : Observable<any> {
+
+    return this.http.post(this.baseUrl,manage);
   }
 
 

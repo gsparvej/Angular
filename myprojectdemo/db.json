@@ -11,5 +11,14 @@
       "author": "User"
     }
   ],
-  "management": []
+  "management": [
+    {
+      "id": "f59a",
+      "name": "Md. Parvej Hossen",
+      "email": "parvejmd4469@gmail.com",
+      "designation": "admin",
+      "department": "Administration",
+      "contact": "078927892"
+    }
+  ]
 }
