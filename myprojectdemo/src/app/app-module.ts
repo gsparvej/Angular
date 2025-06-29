@@ -10,6 +10,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Home } from './home/home';
 import { AddManagement } from './add-management/add-management';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateManagement } from './update-management/update-management';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     Footer,
     ViewAllManagement,
     Home,
-    AddManagement
+    AddManagement,
+    UpdateManagement
   ],
   imports: [
     BrowserModule,

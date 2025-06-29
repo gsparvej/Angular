@@ -24,7 +24,7 @@
         <td>{{m.contact}}</td>
         
         <td>
-            <button class="btn btn-warning m-1 p-1" >Edit</button>
+            <button class="btn btn-warning m-1 p-1" (click)="getManageById(m.id)">Edit</button>
             <button class="btn btn-danger m-1 p-1" (click)="deleteManage(m.id)">Delete</button>
         </td>
     </tr>

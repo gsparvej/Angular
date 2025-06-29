@@ -29,5 +29,14 @@ export class CompanyService {
     return this.http.post(this.baseUrl,manage);
   }
 
+  getManagementById(id: string): Observable<any> {
+
+    return this.http.get(this.baseUrl+'/'+id);
+  }
+  updateManagement(id: string, management: Management): Observable<any> {
+
+return this.http.put(this.baseUrl+'/'+id,management);
+  }
+
 
 }

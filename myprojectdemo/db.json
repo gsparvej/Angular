@@ -19,6 +19,14 @@
       "designation": "admin",
       "department": "Administration",
       "contact": "078927892"
+    },
+    {
+      "id": "c8fe",
+      "name": "Eiasin Prodhan",
+      "email": "eiasin@gamil.com",
+      "designation": "Admin",
+      "department": "Administration",
+      "contact": "018576587876"
     }
   ]
 }
