@@ -14,6 +14,8 @@ import { AddManagement } from './add-management/add-management';
 import { UpdateManagement } from './update-management/update-management';
 import { ViewAllEmployee } from './view-all-employee/view-all-employee';
 import { UpdateEmployee } from './update-employee/update-employee';
+import { ViewAllLocation } from './view-all-location/view-all-location';
+import { AddLocation } from './add-location/add-location';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { UpdateEmployee } from './update-employee/update-employee';
     AddManagement,
     UpdateManagement,
     ViewAllEmployee,
-    UpdateEmployee
+    UpdateEmployee,
+    ViewAllLocation,
+    AddLocation
   ],
   imports: [
     BrowserModule,
