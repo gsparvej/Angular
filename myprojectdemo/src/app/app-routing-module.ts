@@ -7,6 +7,7 @@ import { AddEmployee } from './add-employee/add-employee';
 import { AddManagement } from './add-management/add-management';
 import { UpdateManagement } from './update-management/update-management';
 import { ViewAllEmployee } from './view-all-employee/view-all-employee';
+import { UpdateEmployee } from './update-employee/update-employee';
 
 const routes: Routes = [
   {path:'viewManagement', component: ViewAllManagement},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'addManagement', component: AddManagement},
   {path: 'updateManagement/:id', component: UpdateManagement },
   {path: 'viewEmp', component: ViewAllEmployee},
-  {path: 'addEmp', component: AddEmployee}
+  {path: 'addEmp', component: AddEmployee},
+  {path: 'updateEmployee/:id', component: UpdateEmployee}
 ];
 
 @NgModule({

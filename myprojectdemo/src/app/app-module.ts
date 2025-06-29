@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddManagement } from './add-management/add-management';
 import { UpdateManagement } from './update-management/update-management';
 import { ViewAllEmployee } from './view-all-employee/view-all-employee';
+import { UpdateEmployee } from './update-employee/update-employee';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ViewAllEmployee } from './view-all-employee/view-all-employee';
     AddEmployee,
     AddManagement,
     UpdateManagement,
-    ViewAllEmployee
+    ViewAllEmployee,
+    UpdateEmployee
   ],
   imports: [
     BrowserModule,

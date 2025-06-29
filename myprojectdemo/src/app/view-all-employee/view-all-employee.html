@@ -25,8 +25,8 @@
         <td>{{e.contact}}</td>
         <td>{{e.salary}}</td>
         <td>
-            <button class="btn btn-warning m-1 p-1" >Edit</button>
-            <button class="btn btn-danger m-1 p-1" >Delete</button>
+            <button class="btn btn-warning m-1 p-1" (click)="getEmpById(e.id)">Edit</button>
+            <button class="btn btn-danger m-1 p-1" (click)="deleteEmp(e.id)">Delete</button>
         </td>
     </tr>
 </tbody>

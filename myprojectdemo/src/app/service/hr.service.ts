@@ -22,4 +22,21 @@ export class HrService {
 
     return this.http.post(this.baseUrl,emp);
   }
+
+
+  deleteEmp(id: string) : Observable<any> {
+
+return this.http.delete(this.baseUrl+'/'+id);
+
+  }
+
+   getEmployeeById(id: string): Observable<any> {
+
+    return this.http.get(this.baseUrl+'/'+id);
+  } 
+
+  updateEmployee(id: string, emp: Employee): Observable<any> {
+  
+  return this.http.put(this.baseUrl+'/'+id,emp);
+    }
 }

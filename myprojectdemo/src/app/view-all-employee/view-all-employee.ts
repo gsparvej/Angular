@@ -31,4 +31,48 @@ this.employee = this.hrService.getAllEmoloyee();
 
   }
 
+
+
+  getEmpById(id:string): void{
+
+      this.hrService.getEmployeeById(id).subscribe({
+
+      next: (res) => {
+
+      console.log(res,"Id Get Successfully");
+      this.router.navigate(['/updateEmployee',id]);
+
+                    },
+      error: (err) => {
+      console.log(err);
+
+
+  }
+
+
+});
+
+
+  }
+
+
+
+  deleteEmp(id: string ): void {
+
+this.hrService.deleteEmp(id).subscribe({
+
+  next: (res) => {
+
+    this.cdr.reattach();
+    this.loadAllEmployee();
+  },
+  error: (err) => {
+    console.log(err);
+  }
+
+
+})
+
+  }
+
 }
