@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { HrService } from '../service/hr.service';
 import { Router } from '@angular/router';
 import { Employee } from '../../model/employee.model';
+import { LocationService } from '../service/location.service';
+import { Location } from '../../model/location.model';
 
 
 @Component({
@@ -12,6 +14,7 @@ import { Employee } from '../../model/employee.model';
   styleUrl: './add-employee.css'
 })
 export class AddEmployee implements OnInit{
+  locations : Location[] = [];
 
   formGroup! : FormGroup;
 
@@ -19,7 +22,8 @@ export class AddEmployee implements OnInit{
 private hrService : HrService,
 private cdr : ChangeDetectorRef,
 private router : Router,
-private formBuilder : FormBuilder
+private formBuilder : FormBuilder,
+private locationService: LocationService
 
 
   ){}
