@@ -41,6 +41,25 @@ private locationService: LocationService
    });
   }
 
+
+
+ loadLocation(): void {
+
+    this.locationService.getAllLocation().subscribe({
+
+      next: (loc) => {
+        this.locations = loc;
+
+      },
+      error: (err) => {
+
+        console.log(err);
+      }
+
+    });
+
+  }
+
   addEmp(): void {
 const emp : Employee = {...this.formGroup.value};
 this.hrService.saveEmployee(emp).subscribe({
