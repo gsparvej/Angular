@@ -35,9 +35,28 @@ private locationService: LocationService
     designation :[''],
     department : [''],
     startDate : [''],
+    address : [''],
     contact : [''],
     salary : [''],
 
+    location : this.formBuilder.group({
+
+      address :[''],
+      image  :['']
+
+
+    })
+
+   });
+
+   this.loadLocation();
+
+   this.formGroup.get('location')?.get('name')?.valueChanges.subscribe(address => {
+    const selectedLocation = this.locations.find(loc => loc.address === address);
+    if(selectedLocation) {
+
+      this.formGroup.patchValue({location: selectedLocation});
+    }
    });
   }
 
@@ -61,11 +80,13 @@ private locationService: LocationService
   }
 
   addEmp(): void {
+
 const emp : Employee = {...this.formGroup.value};
 this.hrService.saveEmployee(emp).subscribe({
 
   next: (employee) => {
     console.log(employee,'added Successfully ! ');
+    this.loadLocation();
     this.formGroup.reset();
     this.router.navigate(['/viewEmp']);
   },

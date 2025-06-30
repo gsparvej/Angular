@@ -2,6 +2,8 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Employee } from '../../model/employee.model';
 import { HrService } from '../service/hr.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LocationService } from '../service/location.service';
+import { Location } from '../../model/location.model';
 
 @Component({
   selector: 'app-update-employee',
@@ -13,18 +15,21 @@ export class UpdateEmployee implements OnInit {
 
   id: string = '';
   employee : Employee = new Employee;
+  locations: Location[] = [];
 
   constructor(
 private hrService : HrService,
   private route : ActivatedRoute,
     private cdr : ChangeDetectorRef,
-    private router : Router 
+    private router : Router,
+    private locationService : LocationService
 
   ){}
 
 
   ngOnInit(): void {
     this.loadEmployeeById();
+    this.loadLocation();
   }
 
   loadEmployeeById() {
@@ -70,6 +75,27 @@ error: (err) => {
 
 
 
+  }
+
+
+  loadLocation(): void {
+    this.locationService.getAllLocation().subscribe({
+
+      next: (result) => {
+        this.locations = result;
+        this.cdr.markForCheck();
+      },
+      error : (er) => {
+        console.log(er);
+      }
+
+
+    });
+
+  }
+
+  compareLocation(l1: Location, l2: Location): boolean {
+    return l1 && l2 ? l1.id === l2.id : l1 === l2;
   }
 
 }

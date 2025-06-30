@@ -1,24 +1,58 @@
 {
   "employee": [
     {
-      "id": "6a9d",
-      "name": "Md. Parvej Hossen",
+      "id": "b833",
+      "name": "Md. Parvej ",
       "designation": "ferfreg",
-      "department": "administration",
-      "startDate": "2025-06-03",
-      "address": "Dhaka",
-      "contact": "876876",
-      "salary": 12000
+      "department": "grg",
+      "startDate": "2024-05-01",
+      "address": {
+        "id": "2",
+        "address": "Rajshahi",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/58/3e/b0/bhubaneswar-shiva-temple.jpg?w=700&h=400&s=1"
+      },
+      "contact": "656757",
+      "salary": 65666,
+      "location": {
+        "address": "Chittagong",
+        "image": ""
+      }
     },
     {
-      "id": "13ca",
-      "name": "Rakib",
-      "designation": "mvnv",
-      "department": "jffjfj",
-      "startDate": "2024-08-28",
-      "address": "Rajshahi",
-      "contact": "7678658",
-      "salary": 3333
+      "id": "b3c3",
+      "name": "Md Hossen",
+      "designation": "ferfreg",
+      "department": "frdfgb",
+      "startDate": "2025-02-01",
+      "address": {
+        "id": "ba90",
+        "address": "Chittagong",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrxC_DsjWRWcQXCel_S6P3eXzVEKkOQO8jQ9D1GIRVCE_AA8Xc42ZZWq0aDwnNmfO1vCW99XdPwAUKx_zypF9mem6ZRJobCDaERQzg2zRQeNErvxQJQpnsYxYj4THdllAYf_EzR=w540-h312-n-k-no"
+      },
+      "contact": "756",
+      "salary": 54646567,
+      "location": {
+        "address": "Rajshahi",
+        "image": ""
+      }
+    },
+    {
+      "id": "7b48",
+      "name": "Md. Parvej Hossen",
+      "designation": "CEO",
+      "department": "Management",
+      "startDate": "2025-01-01",
+      "address": {
+        "id": "2",
+        "address": "Rajshahi",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/58/3e/b0/bhubaneswar-shiva-temple.jpg?w=700&h=400&s=1"
+      },
+      "contact": "01906-600275",
+      "salary": 80000,
+      "location": {
+        "address": "Dhaka",
+        "image": ""
+      }
     }
   ],
   "management": [
@@ -37,14 +71,6 @@
       "designation": "htyh",
       "department": "fgh",
       "contact": "567567"
-    },
-    {
-      "id": "4c3e",
-      "name": "Md. Parvej Hossen",
-      "email": "",
-      "designation": "",
-      "department": "",
-      "contact": ""
     }
   ],
   "locations": [
