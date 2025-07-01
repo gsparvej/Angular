@@ -38,8 +38,8 @@
     
   </div>
   <div class="col-md-6">
-    <label for="address" class="form-label">Address</label>
-                <select id="address" name="location" class="form-select" [(ngModel)]="employee.address"
+    <label for="location" class="form-label">Address</label>
+                <select id="location" name="location" class="form-select" [(ngModel)]="employee.location"
                     [compareWith]="compareLocation">
                     <option *ngFor="let loc of locations" [ngValue]="loc">{{loc.address }}</option>
                 </select>
