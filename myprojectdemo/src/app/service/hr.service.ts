@@ -8,7 +8,7 @@ import { Employee } from '../../model/employee.model';
 })
 export class HrService {
 
-  baseUrl: string ="http://localhost:3000/employee";
+  baseUrl: string = "http://localhost:3000/employee";
   constructor(private http: HttpClient) { }
 
 
@@ -18,25 +18,25 @@ export class HrService {
 
   }
 
-  saveEmployee(emp : Employee) : Observable<any> {
+  saveEmployee(emp: Employee): Observable<any> {
 
-    return this.http.post(this.baseUrl,emp);
+    return this.http.post(this.baseUrl, emp);
   }
 
 
-  deleteEmp(id: string) : Observable<any> {
+  deleteEmp(id: string): Observable<any> {
 
-return this.http.delete(this.baseUrl+'/'+id);
+    return this.http.delete(this.baseUrl + '/' + id);
 
   }
 
-   getEmployeeById(id: string): Observable<any> {
+  getEmployeeById(id: string): Observable<any> {
 
-    return this.http.get(this.baseUrl+'/'+id);
-  } 
+    return this.http.get(this.baseUrl + '/' + id);
+  }
 
   updateEmployee(id: string, emp: Employee): Observable<any> {
-  
-  return this.http.put(this.baseUrl+'/'+id,emp);
-    }
+
+    return this.http.put(this.baseUrl + '/' + id, emp);
+  }
 }

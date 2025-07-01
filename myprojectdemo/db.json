@@ -6,16 +6,10 @@
       "designation": "ferfreg",
       "department": "grg",
       "startDate": "2024-05-01",
-      "address": {
+      "location": {
         "id": "2",
         "address": "Rajshahi",
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/58/3e/b0/bhubaneswar-shiva-temple.jpg?w=700&h=400&s=1"
-      },
-      "contact": "656757",
-      "salary": 65666,
-      "location": {
-        "address": "Chittagong",
-        "image": ""
       }
     },
     {
@@ -29,11 +23,10 @@
         "address": "Chittagong",
         "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrxC_DsjWRWcQXCel_S6P3eXzVEKkOQO8jQ9D1GIRVCE_AA8Xc42ZZWq0aDwnNmfO1vCW99XdPwAUKx_zypF9mem6ZRJobCDaERQzg2zRQeNErvxQJQpnsYxYj4THdllAYf_EzR=w540-h312-n-k-no"
       },
-      "contact": "756",
-      "salary": 54646567,
       "location": {
-        "address": "Rajshahi",
-        "image": ""
+        "id": "ba90",
+        "address": "Chittagong",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrxC_DsjWRWcQXCel_S6P3eXzVEKkOQO8jQ9D1GIRVCE_AA8Xc42ZZWq0aDwnNmfO1vCW99XdPwAUKx_zypF9mem6ZRJobCDaERQzg2zRQeNErvxQJQpnsYxYj4THdllAYf_EzR=w540-h312-n-k-no"
       }
     },
     {
@@ -46,12 +39,6 @@
         "id": "2",
         "address": "Rajshahi",
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/58/3e/b0/bhubaneswar-shiva-temple.jpg?w=700&h=400&s=1"
-      },
-      "contact": "01906-600275",
-      "salary": 80000,
-      "location": {
-        "address": "Dhaka",
-        "image": ""
       }
     }
   ],
@@ -95,7 +82,5 @@
       "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nouZJBGXJ8jfWKHhn970eI3iSMk7LSjjp3VW6-oRstPmMLAlz5REV1Jq0zg2usXg78yjeihz4Ob_YJWLh22SEUQAaBiAnxrh99pOI_wBE7NGxAGM57MNDuTdlW-BxbmstTzg_pk=w540-h312-n-k-no"
     }
   ],
-  "user": [
-    
-  ]
+  "user": []
 }
