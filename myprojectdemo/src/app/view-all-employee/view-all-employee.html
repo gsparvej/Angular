@@ -24,7 +24,7 @@
         <td>{{e.department}}</td>
         <td>{{e.startDate}}</td>
         <td>{{e.contact}}</td>
-        <td>{{e.address}}</td>
+        <td>{{e.location?.address}}</td>
         <td>{{e.salary}}</td>
         <td>
             <button class="btn btn-warning m-1 p-1" (click)="getEmpById(e.id)">Edit</button>

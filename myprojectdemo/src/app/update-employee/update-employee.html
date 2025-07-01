@@ -1,5 +1,5 @@
 <div class="container border rounded my-3">
-    <h1 class="text-center text-success">Edit Employee Information </h1>
+    <h1 class="text-center text-success">Update Employee Information </h1>
 
     <form (ngSubmit)="updateEmp()">
 
@@ -38,8 +38,11 @@
     
   </div>
   <div class="col-md-6">
-    <label for="" class="form-label">Address</label>
-    <input type="text" class="form-control" id="address" name="address"  placeholder="25000" [(ngModel)]="employee.address">
+    <label for="address" class="form-label">Address</label>
+                <select id="address" name="location" class="form-select" [(ngModel)]="employee.address"
+                    [compareWith]="compareLocation">
+                    <option *ngFor="let loc of locations" [ngValue]="loc">{{loc.address }}</option>
+                </select>
     
   </div>
   </div>
