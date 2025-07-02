@@ -91,4 +91,64 @@ login(credentials: { email: string; password: string }): Observable<AuthResponse
 
 
 
+
+
+
+  // start logout
+  logout(): void {
+    this.clearCurrentUser();
+    if (this.isBrowser()) {
+      localStorage.removeItem('token');
+    }
+  }
+   private clearCurrentUser(): void {
+    if (this.isBrowser()) {
+      localStorage.removeItem('currentUser');
+    }
+    this.currentUserSubject.next(null);
+  }
+
+
+  removeUserDetails(): void {
+    if (this.isBrowser()) {
+      localStorage.clear();
+    }
+  }
+
+   // log out end
+
+  getUserRole(): any {
+    return this.currentUserValue?.role;
+  }
+
+   public get currentUserValue(): UserModel | null {
+    return this.currentUserSubject.value;
+  }
+
+   getToken(): string | null {
+    return this.isBrowser() ? localStorage.getItem('token') : null;
+  }
+
+   isAuthenticated(): boolean {
+    return !!this.getToken();
+  }
+
+  storeUserProfile(user: UserModel): void {
+    if (this.isBrowser()) {
+      localStorage.setItem('currentUser', JSON.stringify(user));
+    }
+  }
+
+  getUserProfileFromStorage(): UserModel | null {
+    if (this.isBrowser()) {
+      const userProfile = localStorage.getItem('currentUser');
+      console.log('User Profile is: ', userProfile);
+      return userProfile ? JSON.parse(userProfile) : null;
+    }
+    return null;
+  }
+
+
+
+
 }

@@ -16,6 +16,9 @@ import { ViewAllEmployee } from './view-all-employee/view-all-employee';
 import { UpdateEmployee } from './update-employee/update-employee';
 import { ViewAllLocation } from './view-all-location/view-all-location';
 import { AddLocation } from './add-location/add-location';
+import { Registration } from './auth/registration/registration';
+import { Login } from './auth/login/login';
+import { Userprofile } from './auth/userprofile/userprofile';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { AddLocation } from './add-location/add-location';
     ViewAllEmployee,
     UpdateEmployee,
     ViewAllLocation,
-    AddLocation
+    AddLocation,
+    Registration,
+    Login,
+    Userprofile
   ],
   imports: [
     BrowserModule,
