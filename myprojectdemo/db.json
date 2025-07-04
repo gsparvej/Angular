@@ -3,23 +3,15 @@
     {
       "id": "6a9d",
       "name": "Md. Parvej Hossen",
+
       "designation": "ferfreg",
       "department": "administration",
       "startDate": "2025-06-03",
       "address": "Dhaka",
       "contact": "876876",
       "salary": 12000
-    },
-    {
-      "id": "13ca",
-      "name": "Rakib",
-      "designation": "mvnv",
-      "department": "jffjfj",
-      "startDate": "2024-08-28",
-      "address": "Rajshahi",
-      "contact": "7678658",
-      "salary": 3333
     }
+   
   ],
   "management": [
     {
