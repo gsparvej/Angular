@@ -3,6 +3,7 @@
     {
       "id": "6a9d",
       "name": "Md. Parvej Hossen",
+<<<<<<< Updated upstream
       "designation": "ferfreg",
       "department": "administration",
       "startDate": "2025-06-03",
@@ -19,6 +20,18 @@
       "address": "Rajshahi",
       "contact": "7678658",
       "salary": 3333
+=======
+      "designation": "CEO",
+      "department": "Administration",
+      "startDate": "2024-05-01",
+      "location": {
+        "id": "0e13",
+        "address": "Mymensingh",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nouZJBGXJ8jfWKHhn970eI3iSMk7LSjjp3VW6-oRstPmMLAlz5REV1Jq0zg2usXg78yjeihz4Ob_YJWLh22SEUQAaBiAnxrh99pOI_wBE7NGxAGM57MNDuTdlW-BxbmstTzg_pk=w540-h312-n-k-no"
+      },
+      "contact": "01906600275",
+      "salary": 45325
+>>>>>>> Stashed changes
     }
   ],
   "management": [
