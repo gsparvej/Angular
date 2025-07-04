@@ -10,17 +10,6 @@
         "name": "Cutting",
         "designationTitle": "Operator"
       }
-    },
-    {
-      "id": "0c81",
-      "name": "Eiasin Prodhan",
-      "phoneNumber": "89798879",
-      "email": "eiasin@gamil.com",
-      "joinDate": "2025-02-01",
-      "department": {
-        "name": "Sewing",
-        "designationTitle": "Supervisor"
-      }
     }
   ],
   "department": [
@@ -33,11 +22,6 @@
       "id": "3cd3",
       "name": "Sewing",
       "designationTitle": "Operator"
-    },
-    {
-      "id": "2ae6",
-      "name": "Sewing",
-      "designationTitle": "Supervisor"
     }
   ],
   "attendance": [
