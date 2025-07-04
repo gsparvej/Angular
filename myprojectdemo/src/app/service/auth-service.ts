@@ -12,7 +12,7 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class AuthService {
 
- baseUrl: string ="http://localhost:3000/user";
+  baseUrl: string ="http://localhost:3000/user";
   private currentUserSubject: BehaviorSubject<UserModel | null>;
   public currentUser$: Observable<UserModel | null>;
 
@@ -149,6 +149,6 @@ login(credentials: { email: string; password: string }): Observable<AuthResponse
   }
 
 
-
+// auth done ***** 
 
 }

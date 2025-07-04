@@ -19,6 +19,7 @@ import { AddLocation } from './add-location/add-location';
 import { Registration } from './auth/registration/registration';
 import { Login } from './auth/login/login';
 import { Userprofile } from './auth/userprofile/userprofile';
+import { Logout } from './auth/logout/logout';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { Userprofile } from './auth/userprofile/userprofile';
     AddLocation,
     Registration,
     Login,
-    Userprofile
+    Userprofile,
+    Logout
   ],
   imports: [
     BrowserModule,

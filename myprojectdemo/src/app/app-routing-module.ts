@@ -10,6 +10,9 @@ import { ViewAllEmployee } from './view-all-employee/view-all-employee';
 import { UpdateEmployee } from './update-employee/update-employee';
 import { ViewAllLocation } from './view-all-location/view-all-location';
 import { AddLocation } from './add-location/add-location';
+import { Registration } from './auth/registration/registration';
+import { Login } from './auth/login/login';
+import { Logout } from './auth/logout/logout';
 
 const routes: Routes = [
   {path:'viewManagement', component: ViewAllManagement},
@@ -20,7 +23,10 @@ const routes: Routes = [
   {path: 'addEmp', component: AddEmployee},
   {path: 'updateEmployee/:id', component: UpdateEmployee},
   {path: 'viewLocation',component: ViewAllLocation},
-  {path: 'addLocation', component: AddLocation}
+  {path: 'addLocation', component: AddLocation},
+  {path: 'reg', component: Registration},
+  {path: 'login', component: Login},
+  {path: 'logout', component: Logout}
 ];
 
 @NgModule({
